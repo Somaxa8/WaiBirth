@@ -26,7 +26,7 @@ when adding mentions at the end of the command to add birthdays on the birthday,
 * Add birthdays
   > ```>add <name> <lastname> <day/month> <url> @mention user interested.```
   
-  > ```Example: >add Sakura Kinomoto 1/4 www.url.com/img.png @Juanito```
+  > Example: ```>add Sakura Kinomoto 1/4 www.url.com/img.png @Juanito```
 
 * View birthday information
   > ```>birth <name> <lastname>```
@@ -35,7 +35,7 @@ when adding mentions at the end of the command to add birthdays on the birthday,
   > ```>edit <ID> <name> <lastname> <day/month> <url> @mention user interested```
   
 * Remove birthday
-  > >rm <ID>
+  > ```>rm <ID>```
   
 * Birthday list
   > ```>list```
