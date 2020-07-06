@@ -24,21 +24,21 @@ HappyBirthdayWaifu.ts class and change the prefix assigned in the @Discord (">")
 when adding mentions at the end of the command to add birthdays on the birthday, the waifu will mention those people added.
 
 * Add birthdays
-  > >add <name> <lastname> <day/month> <url> @mention user interested.
+  > ```>add <name> <lastname> <day/month> <url> @mention user interested.```
   
-  > Example: >add Sakura Kinomoto 1/4 www.url.com/img.png @Juanito
+  > ```Example: >add Sakura Kinomoto 1/4 www.url.com/img.png @Juanito```
 
 * View birthday information
-  > >birth <name> <lastname>
+  > ```>birth <name> <lastname>```
   
 * Edit birthday
-  > >edit <ID> <name> <lastname> <day/month> <url> @mention user interested
+  > ```>edit <ID> <name> <lastname> <day/month> <url> @mention user interested```
   
 * Remove birthday
   > >rm <ID>
   
 * Birthday list
-  > >list
+  > ```>list```
   *birthday lists show ids that allow you to edit and delete*
   
 ## Warnings
