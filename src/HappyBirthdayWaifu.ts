@@ -129,7 +129,7 @@ abstract class HappyBirthdayWaifu {
                     return message.channel.send(messageEmbed);
                 }
             }
-        }, 1000); // 144000000 = 24hrs
+	}, 144000000); // 144000000 = 24hrs
     }
 }
 
