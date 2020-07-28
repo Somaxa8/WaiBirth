@@ -1,4 +1,4 @@
-import { Discord, Command, CommandMessage, CommandNotFound, Guard, On, ArgsOf } from '@typeit/discord';
+import { Discord, Command, CommandMessage, CommandNotFound, Guard } from '@typeit/discord';
 import { MessageEmbed } from 'discord.js';
 import { AdminGuard } from './Guards';
 import moment from 'moment';
@@ -112,8 +112,9 @@ abstract class HappyBirthdayWaifu {
         return message.reply('this command not found <:umiyado:705369169386012693>');
     }
 
-    @On("message")
-    private async happyBirthday([message]: ArgsOf<"message">) {
+    @Command("start")
+    @Guard(AdminGuard)
+    private async happyBirthday(message: CommandMessage) {
         setTimeout(async () => {
             // Get list
             const list = await BirthdayTools.getList();
@@ -128,7 +129,7 @@ abstract class HappyBirthdayWaifu {
                     return message.channel.send(messageEmbed);
                 }
             }
-        }, 144000000);
+        }, 1000); // 144000000 = 24hrs
     }
 }
 
